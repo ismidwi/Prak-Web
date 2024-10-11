@@ -1,0 +1,170 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #F8E8E8;
+    color: #4E0033;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styling */
+header {
+    background-color: #4E0033;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo img.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+nav ul li:first-child a {
+    color: #f49b4e; /* Mengatur warna hanya untuk link Home */
+}
+
+
+/* Cart and Profile container */
+.cart-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Cart icon styling */
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Profile icon styling */
+.profile-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+/* Main content area */
+main {
+    padding: 0px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Intro styling */
+.intro {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: space-between; /* Mengatur ruang antara konten intro dan gambar */
+    align-items: flex-start; /* Menyelaraskan elemen di bagian atas */
+    margin: 0 auto; /* Memusatkan kontainer */
+    padding: 20px; /* Memberikan padding */
+}
+
+.intro-content {
+    text-align: left; /* Mengatur teks ke kiri */
+    margin-right: 20px; /* Memberikan ruang antara teks dan gambar */
+    flex-grow: 1; /* Membuat konten intro mengambil ruang yang tersedia */
+}
+
+.kue-img {
+    display: block;
+    width: 250px;      /* Atur lebar gambar sesuai kebutuhan */
+    height: auto;      /* Membiarkan tinggi menyesuaikan untuk menjaga proporsi */
+    margin-left: 20px; /* Memberikan sedikit ruang di sebelah kiri gambar */
+}
+
+/* Categories */
+.categories {
+    margin-top: -2\px; /* Menghilangkan jarak antara header dan kategori */
+}
+
+/* Categories */
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1;
+    border-top: 3px solid #4E0033; /* Memberikan garis di atas untuk kontainer */
+    border-bottom: 2px solid #4E0033; /* Memberikan garis di bawah untuk kontainer */
+}
+
+.categories ul li {
+    flex-grow: 1; /* Membuat setiap item mengambil lebar yang sama */
+    border-right: none; /* Menghapus border pada item terakhir */
+    text-align: center; /* Menengahkan teks pada setiap item */
+    position: relative; /* Untuk mengatur pseudo-element */
+}
+
+.categories ul li:not(:first-child)::before {
+    content: ""; /* Menggunakan elemen kosong sebagai garis vertikal */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px; /* Menyesuaikan ukuran ketebalan garis vertikal */
+    height: 100%; /* Membuat garis mengikuti tinggi kontainer */
+    background-color: #4E0033; /* Warna garis vertikal */
+}
+
+.categories ul li a {
+    display: block; /* Mengubah menjadi block agar lebar penuh */
+    text-decoration: none;
+    color: #4E0033;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent; /* Garis bawah transparan untuk hover effect */
+    transition: border-bottom 0.3s ease; /* Animasi pada hover */
+}
+
+.categories ul li a:hover {
+    background-color: #4E0033;
+    color: #fff;
+    border-bottom: 2px solid #fff; /* Warna garis bawah saat hover */
+}
+
+/* Footer */
+footer {
+    background-color: #4E0033;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    list-style: none;
+}
